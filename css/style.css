@@ -9,7 +9,7 @@
 }
 
 .layer-1{
-    background-image: url("../assets/layered-waves-haikei_16-9.svg"); /* 960:540 */
+    background-image: url("../docs/assets/images/layered-waves-haikei_16-9.svg"); /* 960:540 */
 
     z-index: -1;
 }
@@ -51,7 +51,7 @@
         height: fit-content;
     }
     .layer-1{
-        background-image: url("../assets/layered-waves-haikei_9-16.svg");
+        background-image: url("../docs/assets/images/layered-waves-haikei_9-16.svg");
         /* 540:960 */
     }
 
