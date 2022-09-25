@@ -1,0 +1,77 @@
+
+.spacer{
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 94vh;
+}
+
+.layer-1{
+    background-image: url("../assets/layered-waves-haikei_16-9.svg"); /* 960:540 */
+
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1659207150 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+.carousel-inner .carousel-item{
+    height: 500px;
+    
+}
+
+.carousel-item img{
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    min-height: 500px;
+    border-radius: 1%;
+}
+
+.profile-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 0px -150px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 992px){
+    .spacer{
+        aspect-ratio: 9/16;
+        height: fit-content;
+    }
+    .layer-1{
+        background-image: url("../assets/layered-waves-haikei_9-16.svg");
+        /* 540:960 */
+    }
+
+    .profile-img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .spacer{
+        height: 95vh;
+    }
+    .carousel{
+        display: none;
+    }
+    .profile-img{
+        object-position: 0px -50px;
+        display: block;
+        height: 200px;
+        width: 200px;
+        border-radius: 50px;
+    }
+}
